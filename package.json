@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/timmahrt/praatIO.js/issues"
   },
-  "main": "/lib/index.js",
+  "main": "./lib/index.js",
   "files": [
     "/LICENSE",
     "/README.md",

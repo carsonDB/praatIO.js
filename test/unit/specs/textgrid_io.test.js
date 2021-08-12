@@ -1,10 +1,10 @@
-import fs from 'fs';
+const fs = require('fs');
 
-import {
+const {
   parseTextgrid, serializeTextgrid, serializeTextgridToCsv,
   decodeBuffer, IntervalTier, PointTier, Textgrid,
   prepTgForSaving, INTERVAL_TIER, POINT_TIER
-} from '../../../lib';
+} = require('../../../lib');
 
 function entriesAreEqual (entryA, entryB, tierType) {
   expect([INTERVAL_TIER, POINT_TIER]).toContain(tierType);

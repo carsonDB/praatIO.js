@@ -1,6 +1,6 @@
-import { toBeDeepCloseTo } from 'jest-matcher-deep-close-to';
+const { toBeDeepCloseTo } = require('jest-matcher-deep-close-to');
 
-import {
+const {
   IntervalTier, PointTier,
   // functions that compare
   compareTextgrids, compareTiers,
@@ -9,11 +9,11 @@ import {
   // query functions
   getValuesAtPoints, getValuesInIntervals, getEntriesInInterval,
   getNonEntriesFromIntervalTier, findLabelInTier
-} from '../../../lib';
+} = require('../../../lib');
 
-import {
+const {
   getIntervalTier1, getIntervalTier2, getPointTier1, getPrefabTextgrid
-} from './factory.js';
+} = require('./factory.js');
 
 expect.extend({ toBeDeepCloseTo });
 

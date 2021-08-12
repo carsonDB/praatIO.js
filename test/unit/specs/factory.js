@@ -1,6 +1,6 @@
-import {
+const {
   Textgrid, IntervalTier, PointTier
-} from '../../../lib';
+} = require('../../../lib');
 
 function getIntervalTier1 () {
   const intervals1 = [
@@ -77,7 +77,7 @@ function testTier (tier, minTime, maxTime, entryList) {
   expect(tier.maxTimestamp).toBeCloseTo(maxTime);
 }
 
-export {
+module.exports =  {
   getIntervalTier1, getIntervalTier2, getPointTier1, getPointTier2,
   getPointTier3, getPrefabTextgrid, testTier
 };

@@ -1,5 +1,5 @@
 // THIS IS PROBABLY NOT HOW TO GO ABOUT TESTING INDEX.js
-import {
+const {
   Textgrid, IntervalTier, PointTier,
   // functions that modify
   appendTextgrid, appendTier,
@@ -29,7 +29,7 @@ import {
   // from utils
   doIntervalsOverlap, isClose, sortCompareEntriesByTime,
   entryListToTree, findIntervalAtTime, findPointAtTime
-} from '../../../lib';
+} = require('../../../lib');
 
 test('can import everything exported by praatio.js with no problem', () => {
   expect(Textgrid).not.toEqual(undefined);

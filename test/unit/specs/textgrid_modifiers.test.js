@@ -1,6 +1,6 @@
-import { toBeDeepCloseTo } from 'jest-matcher-deep-close-to';
+const { toBeDeepCloseTo } = require('jest-matcher-deep-close-to');
 
-import {
+const {
   Textgrid, IntervalTier, PointTier,
   // functions that modify
   appendTextgrid, appendTier,
@@ -16,12 +16,12 @@ import {
   sortCompareEntriesByTime,
   // exceptions
   IncorrectArgumentException
-} from '../../../lib';
+}  = require('../../../lib');
 
-import {
+const {
   getIntervalTier1, getPointTier1,
   getPrefabTextgrid, testTier
-} from './factory.js';
+}  = require('./factory.js');
 
 expect.extend({ toBeDeepCloseTo });
 

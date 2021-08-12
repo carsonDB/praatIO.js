@@ -1,7 +1,7 @@
-import {
+const {
   doIntervalsOverlap, isClose, sortCompareEntriesByTime,
   entryListToTree, findIntervalAtTime, findPointAtTime
-} from '../../../lib';
+} = require('../../../lib');
 
 test('testing intervals that do and do not overlap', () => {
   // Non-overlapping, A occurs before B
